@@ -1,0 +1,30 @@
+defaults:
+  - dataset: wsi
+
+result_path: /result/all_ours/
+
+dataset_dir: /dataset/all/
+
+name: wsi
+img_size: 256
+is_to_rgb: True
+img_ch: 3
+num_classes: 4
+
+
+model: resnet18
+seed: 0
+lr: 3e-4
+batch_size: 128
+num_workers: 2
+device: 'cuda:0'
+num_epochs: 200
+is_pretrained: True
+validation: 0.2
+
+proportion_metric: ce
+mini_batch: 4
+num_sampled_instances: 128
+val_metric: l1
+
+consistency: none
