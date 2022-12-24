@@ -1,0 +1,6 @@
+name: wsi
+dir: /../dataset/mini/
+img_size: 256
+is_to_rgb: True
+img_ch: 3
+num_classes: 3
